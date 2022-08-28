@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+
+}
+
+
+.nav {
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.row-centered {
+    align-items: center
+}
+
+.content-container {
+    max-width: 1120px;
+    justify-content: center;
+    margin: auto;
+}
+
+#app-logo {
+    height: 40px;
+    margin-right: 16px;
+
+}
+
+.app-logo-container {}
+
+#app-title {
+
+    font-weight: bold;
+    font-size: 1.88em;
+    line-height: 28px;
+    color: #22343D;
+}
+
+.nav-bar-wrapper {
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.nav-links-container>a {
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 28px;
+    color: #22343D;
+    margin: 0 20px;
+}
+
+.primary-button {
+    background: #02897A;
+    border-radius: 4px;
+    height: 43px;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    padding: 0 25px;
+    white-space: pre;
+
+}
+
+.secondary-button {
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    height: 43px;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 24px;
+    color: #173A56;
+    cursor: pointer;
+    padding: 0 25px;
+    white-space: pre;
+}
+
+.button-link {
+    color: #02897A;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 24px;
+    text-decoration-line: underline;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: pre;
+}
+
+
+#play-icon {
+    height: 17px;
+    margin-right: 9px;
+
+
+}
+
+.buttons-nav {
+    margin: 0 12px;
+}
+
+.switch-theme-button {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: #F3F3F3;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar-buttons-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-header {
+    font-weight: 700;
+    font-size: 2.5em;
+    line-height: 60px;
+    color: #22343D;
+}
+
+.content-left-col,
+.content-right-col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 1.13em;
+    line-height: 28px;
+    color: #22343D;
+}
+
+
+.first-section-right-col {
+    background-image: url(img/first-section-image.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 555px;
+}
+
+
+.section-1 {}
+
+.button-link-margin {
+    margin-left: 30px;
+
+}
+
+#menu-icon {
+    width: 28px;
+    height: 31px;
+
+}
+
+#menu-collapse {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+
+}
+
+@media screen and (max-width: 890px) {
+    .menu-icon {
+        display: flex;
+    }
+    
+    .content-container {
+        padding: 0 20px;
+
+    }
+
+    .nav-bar-wrapper > .nav-bar-buttons-container {
+        position: absolute;
+        width: 100%;
+        top: 80px;   
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        overflow-y: hidden;
+        transition: all 0.2s ease-in-out;
+    }
+    .nav-bar-buttons-container > .nav-links-container > a {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .nav-bar-buttons-container > .action-buttons-wrapper {
+        padding: 10px 0;
+        flex-direction: column;
+    }
+
+    .nav-bar-buttons-container > .action-buttons-wrapper > button {
+      margin: 5px 0;
+    }
+    .nav-bar-buttons-container > .nav-links-container > a:hover {
+      text-decoration: underline;
+
+    }
+
+    .nav > #menu-collapse:not(:checked) ~ .nav-bar-wrapper > .nav-bar-buttons-container {
+        height: 0;
+    }
+ 
+    .nav > #menu-collapse:checked ~ .nav-bar-wrapper > .nav-bar-buttons-container {
+       max-height: 100vh;
+       height: auto;
+       padding: 20px 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .section-2-col {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+    
+    .section-2-col-item {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+}
